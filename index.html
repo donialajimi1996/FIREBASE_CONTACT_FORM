@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Form</title>
+    <link rel="icon" href="res/download.jpg" type="jpg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body id="contactForm">
+    <div class="container">
+      <h1 class="brand"><span>Welcome</span> To My Contact Form</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>Go My Code</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> Rue Jahedh</li>
+            <li><i class="fa fa-phone"></i> +216 22 23 24 25</li>
+            <li><i class="fa fa-envelope"></i> test@gomycode.test</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <form>
+            <p><label for="name">Name</label> <input id="name" type="text" name="name" required /></p>
+            <p><label for="company">Company</label> <input id="company" type="text" name="company"  required/></p>
+            <p>
+              <label for="email" >Email Address</label> <input id="email" type="email" name="email" required />
+            </p>
+            <p>
+              <label for="number">Phone Number</label> <input id="number" type="text" name="phone" required/>
+            </p>
+            <p class="full">
+              <label for="message" >Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </p>
+            <p class="full"><button  onclick="onSubmit()" >Submit</button></p>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+  <script src="js/main.js"></script>
+</html>
